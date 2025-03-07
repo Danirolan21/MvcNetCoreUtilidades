@@ -58,7 +58,16 @@
                                 Enviar Correo
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               asp-controller="Coches"
+                               asp-action="Index">
+                                Coches
+                            </a>
+                        </li>
+                        <partial name="_MenuUsuario"/>
                     </ul>
+                    @await Component.InvokeAsync("MenuCoches")
                 </div>
             </div>
         </nav>
